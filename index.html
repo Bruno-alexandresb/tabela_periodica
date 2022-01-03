@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela Periódica</title>
+    <link rel="stylesheet" href="css/estilo.css">
+
+</head>
+
+<body>
+    <header>
+        <h2>Tabela Periódica dos Elementos</h2>
+    </header>
+
+    <section id="section">
+        <span id="span"></span>
+        <h2 id="elemento"></h2>
+        <p id="nome"></p> 
+        <p id="grupo"></p> 
+    </section>
+    <div id="test"></div>
+
+    <table>
+        <tr>
+            <td><button class="nao-metal-btn" onclick="elem(1,'H', 'Hidrogênio', 'nao-metal')">H</button></td>
+            <td><button class="vazio"></button></td>
+            <td><button class="vazio"></button></td>
+            <td><button class="vazio"></button></td>
+            <td><button class="vazio"></button></td>
+            <td><button class="vazio"></button></td>
+            <td><button class="vazio"></button></td>
+            <td><button class="vazio"></button></td>
+            <td><button class="vazio"></button></td>
+            <td><button class="vazio"></button></td>
+            <td><button class="vazio"></button></td>
+            <td><button class="vazio"></button></td>
+            <td><button class="vazio"></button></td>
+            <td><button class="vazio"></button></td>
+            <td><button class="vazio"></button></td>
+            <td><button class="vazio"></button></td>
+            <td><button class="vazio"></button></td>
+            <td><button class="gas-nobre-btn" onclick="elem(2,'He', 'Hélio', 'gas-nobre')">He</button></td>
+        </tr><br>
+        <tr>
+            <td><button class="metal-alcalino-btn" onclick="elem(3,'Li', 'Lítio', 'metal-alcalino')">Li</button></td>
+            <td><button class="metal-alcalino-terroso-btn" onclick="elem(4,'Be', 'Berílio', 'metal-alcalino-terroso')"">Be</button></td>
+            <td><button class="vazio"></button></td>
+            <td><button class="vazio"></button></td>
+            <td><button class="vazio"></button></td>
+            <td><button class="vazio"></button></td>
+            <td><button class="vazio"></button></td>
+            <td><button class="vazio"></button></td>
+            <td><button class="vazio"></button></td>
+            <td><button class="vazio"></button></td>
+            <td><button class="vazio"></button></td>
+            <td><button class="vazio"></button></td>
+            <td><button class="semimetal-btn" onclick="elem(5,'B', 'Boro', 'semimetal')">B</button></td>
+            <td><button class="nao-metal-btn" onclick="elem(6,'C', 'Carbono', 'nao-metal')">C</button></td>
+            <td><button class="nao-metal-btn" onclick="elem(7,'N', 'Nitrogênio', 'nao-metal')">N</button></td>
+            <td><button class="nao-metal-btn" onclick="elem(8,'O', 'Oxigênio', 'nao-metal')">O</button></td>
+            <td><button class="halogenio-btn" onclick="elem(9,'F', 'Flúor', 'halogenio')">F</button></td>
+            <td><button class="gas-nobre-btn" onclick="elem(10,'Ne', 'Neônio', 'gas-nobre')">Ne</button></td>
+        </tr>
+        <tr>
+            <td><button class="metal-alcalino-btn" onclick="(11,'Na', 'Sódio', 'metal-alcalino')">Na</button></td>
+            <td><button class="metal-alcalino-terroso-btn" onclick="elem(12,'Mg', 'Magnésio', 'metal-alcalino-terroso')">Mg</button></td>
+            <td><button class="vazio"></button></td>
+            <td><button class="vazio"></button></td>
+            <td><button class="vazio"></button></td>
+            <td><button class="vazio"></button></td>
+            <td><button class="vazio"></button></td>
+            <td><button class="vazio"></button></td>
+            <td><button class="vazio"></button></td>
+            <td><button class="vazio"></button></td>
+            <td><button class="vazio"></button></td>
+            <td><button class="vazio"></button></td>
+            <td><button class="outros-metais-btn" onclick="elem(13,'Al', 'Alumínio', 'outros-metais')">Al</button></td>
+            <td><button class="semimetal-btn" onclick="elem(14,'Si', 'Silício', 'semimetal')">Si</button></td>
+            <td><button class="nao-metal-btn" onclick="elem(15,'P', 'Fosfóro', 'nao-metal')">P</button></td>
+            <td><button class="nao-metal-btn" onclick="elem(16,'S', 'Enxofre', 'nao-metal')">S</button></td>
+            <td><button class="halogenio-btn" onclick="elem(17,'Cl', 'Cloro', 'halogenio')">Cl</button></td>
+            <td><button class="gas-nobre-btn" onclick="elem(18,'Ar', 'Argônio', 'gas-nobre')">Ar</button></td>
+        </tr>
+        <tr>
+            <td><button class="metal-alcalino-btn" onclick="elem(19,'K', 'Potácio', 'metal-alcalino')">K</button></td>
+            <td><button class="metal-alcalino-terroso-btn" onclick="elem(20,'Ca', 'Cálcio', 'metal-alcalino-terroso')">Ca</button></td>
+            <td><button class="metal-transicao-btn" onclick="elem(21,'Sc', 'Escândio', 'metal-transicao')">Sc</button></td>
+            <td><button class="metal-transicao-btn" onclick="elem(22,'Ti', 'Titânio', 'metal-transicao')">Ti</button></td>
+            <td><button class="metal-transicao-btn" onclick="elem(23,'V', 'Vânadio', 'metal-transicao')">V</button></td>
+            <td><button class="metal-transicao-btn" onclick="elem(24,'Cr', 'Crômio', 'metal-transicao')">Cr</button></td>
+            <td><button class="metal-transicao-btn" onclick="elem(25,'Mn', 'Manganês', 'metal-transicao')">Mn</button></td>
+            <td><button class="metal-transicao-btn" onclick="elem(26,'Fe', 'Ferro', 'metal-transicao')">Fe</button></td>
+            <td><button class="metal-transicao-btn" onclick="elem(27,'Co', 'Cobalto', 'metal-transicao')">Co</button></td>
+            <td><button class="metal-transicao-btn" onclick="elem(28,'Ni', 'Níquel', 'metal-transicao')">Ni</button></td>
+            <td><button class="metal-transicao-btn" onclick="elem(29,'Cu', 'Cobre', 'metal-transicao')">Cu</button></td>
+            <td><button class="metal-transicao-btn" onclick="elem(30,'Zn', 'Zinco', 'metal-transicao')">Zn</button></td>
+            <td><button class="outros-metais-btn" onclick="elem(31,'Ga', 'Gálio', 'outros-metais')">Ga</button></td>
+            <td><button class="semimetal-btn" onclick="elem(32,'Ge', 'Germânio', 'semimetal')">Ge</button></td>
+            <td><button class="semimetal-btn" onclick="elem(33,'As', 'Arsênio', 'semimetal')">As</button></td>
+            <td><button class="nao-metal-btn" onclick="elem(34,'Se', 'Selênio', 'nao-metal')">Se</button></td>
+            <td><button class="halogenio-btn" onclick="elem(35,'Br', 'Bromo', 'halogenio')">Br</button></td>
+            <td><button class="gas-nobre-btn" onclick="elem(36,'Kr', 'criptônio', 'gas-nobre')">Kr</button></td>
+        </tr>
+        <tr>
+            <td><button class="metal-alcalino-btn" onclick="elem(37,'Rb', 'Rubídio', 'metal-alcalino')">Rb</button></td>
+            <td><button class="metal-alcalino-terroso-btn" onclick="elem(38,'Sr', 'Estrônico', 'matal-metal-alcalino-terroso')">Sr</button></td>
+            <td><button class="metal-transicao-btn" onclick="elem(39,'Y', 'Ítrio', 'metal-transicao')">Y</button></td>
+            <td><button class="metal-transicao-btn" onclick="elem(40,'Zr', 'Zircônio', 'gas-nobre')">Zr</button></td>
+            <td><button class="metal-transicao-btn" onclick="elem(41,'Nb', 'Nióbio', 'metal-transicao')">Nb</button></td>
+            <td><button class="metal-transicao-btn" onclick="elem(42,'Mo', 'Molibdênio', 'metal-transicao')">Mo</button></td>
+            <td><button class="metal-transicao-btn" onclick="elem(43,'Tc', 'Tecnécio', 'metal-transicao')">Tc</button></td>
+            <td><button class="metal-transicao-btn" onclick="elem(44,'Ru', 'Rutênio', 'metal-transicao')">Ru</button></td>
+            <td><button class="metal-transicao-btn" onclick="elem(45,'Rh', 'Ródio', 'metal-transicao')">Rh</button></td>
+            <td><button class="metal-transicao-btn" onclick="elem(46,'Pd', 'Paládio', 'metal-transicao')">Pd</button></td>
+            <td><button class="metal-transicao-btn" onclick="elem(47,'Ag', 'Prata', 'metal-transicao')">Ag</button></td>
+            <td><button class="metal-transicao-btn" onclick="elem(48,'Cd', 'Cádmio', 'metal-transicao')">Cd</button></td>
+            <td><button class="outros-metais-btn" onclick="elem(49,'In', 'Índio', 'outros-metais')">In</button></td>
+            <td><button class="outros-metais-btn" onclick="elem(50,'Sn', 'Estanho', 'outros-metais')">Sn</button></td>
+            <td><button class="semimetal-btn" onclick="elem(51,'Sb', 'Antimônioo', 'semimetal')">Sb</button></td>
+            <td><button class="semimetal-btn" onclick="elem(52,'Te', 'Telúrio', 'semimetal')">Te</button></td>
+            <td><button class="halogenio-btn" onclick="elem(53,'I', 'Iodo', 'halogenio')">I</button></td>
+            <td><button class="gas-nobre-btn" onclick="elem(54,'Xe', 'Xemônio', 'gas-nobre')">Xe</button></td>
+        </tr>
+        <tr>
+            <td><button class="metal-alcalino-btn" onclick="elem(55,'Cs', 'Césio', 'metal-alcalino')">Cs</button></td>
+            <td><button class="metal-alcalino-terroso-btn" onclick="elem(56,'Ba', 'Bário', 'metal-alcalino-terroso')">Ba</button></td>
+            <td><button disabled="true" class="lantanideo-btn">"</button></td>
+            <td><button class="metal-transicao-btn" onclick="elem(72,'Hf', 'Háfnio', 'metal-transicao')">Hf</button></td>
+            <td><button class="metal-transicao-btn" onclick="elem(73,'Ta', 'Tântalo', 'metal-transicao')">Ta</button></td>
+            <td><button class="metal-transicao-btn" onclick="elem(74,'W', 'Tungstênio', 'metal-transicao')">W</button></td>
+            <td><button class="metal-transicao-btn" onclick="elem(75,'Re', 'Rênio', 'metal-transicao')">Re</button></td>
+            <td><button class="metal-transicao-btn" onclick="elem(76,'Os', 'Ósmio', 'metal-transicao')">Os</button></td>
+            <td><button class="metal-transicao-btn" onclick="elem(77,'Ir', 'Irídio', 'metal-transicao')">Ir</button></td>
+            <td><button class="metal-transicao-btn" onclick="elem(78,'Pt', 'Platina', 'metal-transicao')">Pt</button></td>
+            <td><button class="metal-transicao-btn" onclick="elem(79,'Au', 'Ouro', 'metal-transicao')">Au</button></td>
+            <td><button class="metal-transicao-btn" onclick="elem(80,'Hg', 'Mercúrio', 'metal-transicao')">Hg</button></td>
+            <td><button class="outros-metais-btn" onclick="elem(81,'Tl', 'Tálio', 'outros-metais')">Tl</button></td>
+            <td><button class="outros-metais-btn" onclick="elem(82,'Pb', 'Chumbo', 'outros-metais')">Pb</button></td>
+            <td><button class="semimetal-btn" onclick="elem(83,'Bi', 'Bismuto', 'semimetal')">Bi</button></td>
+            <td><button class="semimetal-btn" onclick="elem(84,'Po', 'Polônio', 'semimetal')">Po</button></td>
+            <td><button class="halogenio-btn" onclick="elem(85,'At', 'Aslato', 'halogenio')">At</button></td>
+            <td><button class="gas-nobre-btn" onclick="elem(86,'Rn', 'Randônio', 'gas-nobre')">Rn</button></td>
+        </tr>
+        <tr>
+            <td><button class="metal-alcalino-btn" onclick="elem(87,'Fr', 'Frâncio', 'metal-alcalino')">Fr</button></td>
+            <td><button class="metal-alcalino-terroso-btn" onclick="elem(88,'Ra', 'Rádio', 'metal-alcalino-terroso')">Ra</button></td>
+            <td><button disabled="true" class="actinidio-btn">""</button></td>
+            <td><button class="metal-transicao-btn" onclick="elem(104,'Rf', 'Rutherfórdio', 'metal-transicao')">Rf</button></td>
+            <td><button class="metal-transicao-btn" onclick="elem(105,'Db', 'Dúbnio', 'metal-transicao')">Db</button></td>
+            <td><button class="metal-transicao-btn" onclick="elem(106,'Sg', 'Seabórgio', 'metal-transicao')">Sg</button></td>
+            <td><button class="metal-transicao-btn" onclick="elem(107,'Bh', 'Bóhrio', 'metal-transicao')">Bh</button></td>
+            <td><button class="metal-transicao-btn" onclick="elem(108,'Hs', 'Hássio', 'metal-transicao')">Hs</button></td>
+            <td><button class="metal-transicao-btn" onclick="elem(109,'Mt', 'Meitnério', 'metal-transicao')">Mt</button></td>
+            <td><button class="metal-transicao-btn" onclick="elem(110,'Ds', 'darmstádtio', 'metal-transicao')">Ds</button></td>
+            <td><button class="metal-transicao-btn" onclick="elem(111,'Rg', 'Roentgênio', 'actinidio')">Rg</button></td>
+            <td><button class="metal-transicao-btn" onclick="elem(112,'Cn', 'Copernício', 'metal-transicao')">Cn</button></td>
+            <td><button class="outros-metais-btn" onclick="elem(113,'Nh', 'Nihônio', 'outros-metais')">Nh</button></td>
+            <td><button class="outros-metais-btn" onclick="elem(114,'Fl', 'Flevóvio', 'outros-metais')">Fl</button></td>
+            <td><button class="outros-metais-btn" onclick="elem(115,'Mc', 'Moscóvio', 'outros-metais')">Mc</button></td>
+            <td><button class="outros-metais-btn" onclick="elem(116,'Lv', 'Livermório', 'outros-metais')">Lv</button></td>
+            <td><button class="halogenio-btn" onclick="elem(117,'Ts', 'Tenesso', 'halogenio')">Ts</button></td>
+            <td><button class="gas-nobre-btn" onclick="elem(118,'Og', 'Oganessônio', 'gas-nobre')">Og</button></td>
+        </tr>
+        <tr>
+            <td><button class="vazio"></button></td>
+            <td><button class="vazio"></button></td>
+            <td><button class="lantanideo-btn" onclick="elem(57,'La', 'Lantânio', 'lantanideo')">La</button></td>
+            <td><button class="lantanideo-btn" onclick="elem(58,'Ce', 'Cério', 'lantanideo')">Ce</button></td>
+            <td><button class="lantanideo-btn" onclick="elem(59,'Pr', 'Praseodímio', 'lantanideo')">Pr</button></td>
+            <td><button class="lantanideo-btn" onclick="elem(60,'Nd', 'Neodímio', 'lantanideo')">Nd</button></td>
+            <td><button class="lantanideo-btn" onclick="elem(61,'Pm', 'Promécio', 'lantanideo')">Pm</button></td>
+            <td><button class="lantanideo-btn" onclick="elem(62,'Sm', 'Samário', 'lantanideo')">Sm</button></td>
+            <td><button class="lantanideo-btn" onclick="elem(63,'Eu', 'Európio', 'lantanideo')">Eu</button></td>
+            <td><button class="lantanideo-btn" onclick="elem(64,'Gd', 'Gadolínio', 'lantanideo')">Gd</button></td>
+            <td><button class="lantanideo-btn" onclick="elem(65,'Tb', 'térbio', 'lantanideo')">Tb</button></td>
+            <td><button class="lantanideo-btn" onclick="elem(66,'Dy', 'Disprósio', 'lantanideo')">Dy</button></td>
+            <td><button class="lantanideo-btn" onclick="elem(67,'Ho', 'Hómio', 'lantanideo')">Ho</button></td>
+            <td><button class="lantanideo-btn" onclick="elem(68,'Er', 'Érbio', 'lantanideo')">Er</button></td>
+            <td><button class="lantanideo-btn" onclick="elem(69,'Tm', 'Túlio', 'lantanideo')">Tm</button></td>
+            <td><button class="lantanideo-btn" onclick="elem(70,'Yb', 'Itérbio', 'lantanideo')">Yb</button></td>
+            <td><button class="lantanideo-btn" onclick="elem(71,'Lu', 'Lutécio', 'lantanideo')">Lu</button></td>
+            <td><button class="vazio"></button></td>
+        </tr>
+        <tr>
+            <td><button class="vazio"></button></td>
+            <td><button class="vazio"></button></td>
+            <td><button class="actinidio-btn" onclick="elem(89,'Ac', 'Actínio', 'actinidio')">Ac</button></td>
+            <td><button class="actinidio-btn" onclick="elem(90,'Th', 'Tório', 'actinidio')">Th</button></td>
+            <td><button class="actinidio-btn" onclick="elem(91,'Pa', 'Protactínio', 'actinidio')">Pa</button></td>
+            <td><button class="actinidio-btn" onclick="elem(92,'U', 'Urânio', 'actinidio')">U</button></td>
+            <td><button class="actinidio-btn" onclick="elem(93,'Np', 'Netúnio', 'actinidio')">Np</button></td>
+            <td><button class="actinidio-btn" onclick="elem(94,'Pu', 'Plutônio', 'actinidio')">Pu</button></td>
+            <td><button class="actinidio-btn" onclick="elem(95,'Am', 'Amerício', 'actinidio')">Am</button></td>
+            <td><button class="actinidio-btn" onclick="elem(96,'Cm', 'Cúrio', 'actinidio')">Cm</button></td>
+            <td><button class="actinidio-btn" onclick="elem(97,'Bk', 'Berquélio', 'actinidio')">Bk</button></td>
+            <td><button class="actinidio-btn" onclick="elem(98,'Cf', 'Califórnio', 'actinidio')">Cf</button></td>
+            <td><button class="actinidio-btn" onclick="elem(99,'Es', 'Einstênio', 'actinidio')">Es</button></td>
+            <td><button class="actinidio-btn" onclick="elem(100,'Fm', 'Férmio', 'actinidio')">Fm</button></td>
+            <td><button class="actinidio-btn" onclick="elem(101,'Md', 'Mendelévio', 'actinidio')">Md</button></td>
+            <td><button class="actinidio-btn" onclick="elem(102,'No', 'Nobélio', 'actinidio')">No</button></td>
+            <td><button class="actinidio-btn" onclick="elem(103,'Lr', 'Laurêncio', 'actinidio')">Lr</button></td>
+            <td><button class="vazio"></button></td>
+        </tr>
+    </table>
+    <script src="js/app.js"></script>
+</body>
+
+</html>

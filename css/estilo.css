@@ -1,0 +1,175 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    align-items: center;
+	background-color: rgb(95, 95, 95);
+}
+header{
+    text-align: center;
+    height: 70px;
+    margin-bottom: 0;
+	color: white;
+}
+div{
+    text-align: center;
+}
+button{
+    width: 100%;
+    height: 100%;
+    color: white;
+	font-weight: bold;
+}
+
+
+.vazio{
+    background: transparent;
+    border: none;
+
+}
+
+small{
+    font-size: 8px;
+	color: white;
+}
+table{
+    width: 900px;
+    height: 250px;
+    align-items: center
+}
+table tr td{
+    width: 40px;
+    height: 40px;
+}
+h2{
+	font-size:2em;
+}
+
+p:last-child{
+	font-size:.8em;	
+}
+#grupo{
+	font-size: .7em;
+}
+section{
+    width: 8em;
+	height:8em;
+	border:.125rem solid;
+	border-radius:.25rem;	
+	line-height:1.25;
+	font-weight: bold;
+	margin-bottom:.5em;
+	position:relative;
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	text-transform: capitalize;
+}
+
+span{
+	font-size:.75em;
+	position:absolute;
+	top:.3em;
+	left:.5em;	
+}
+:root{
+	--nao-metal:rgb(180,210,100);
+	--gas-nobre:rgb(100,180,225);
+	--metal-alcalino:rgb(245,200,100);
+	--metal-alcalino-terroso:rgb(240,230,90);
+	--semimetal:rgb(110,200,190);
+	--halogenio:rgb(170,225,255);
+	--outros-metais:rgb(190,210,210);
+	--metal-transicao:rgb(245,175,175);
+	--lantanideo:rgb(150,225,225);
+	--actinidio:rgb(230,190,220);
+}
+.nao-metal{
+	color:var(--nao-metal);
+}
+.nao-metal-btn{
+    color: white;
+    font-weight: bold;
+    background-color: var(--nao-metal);
+}
+	
+.gas-nobre{
+	color:var(--gas-nobre);
+}
+.gas-nobre-btn{
+    color: white;
+    font-weight: bold;
+    background-color: var(--gas-nobre);
+}
+
+
+.metal-alcalino{
+	color:var(--metal-alcalino);
+}
+.metal-alcalino-btn{
+    color: white;
+    font-weight: bold;
+    background-color: var(--metal-alcalino);
+}
+
+
+.metal-alcalino-terroso{
+	color:var(--metal-alcalino-terroso);
+}
+.metal-alcalino-terroso-btn{
+	color: white;
+	background-color: var(--metal-alcalino-terroso);
+}
+
+
+.semimetal{
+	color:var(--semimetal);
+}
+.semimetal-btn{
+	color: white;
+	background-color: var(--semimetal);
+}
+
+
+.halogenio{
+	color:var(--halogenio);
+}
+.halogenio-btn{
+	color: white;
+	background-color: var(--halogenio);
+}
+
+
+.outros-metais{
+	color:var(--outros-metais);
+}
+.outros-metais-btn{
+	color: white;
+	background-color: var(--outros-metais);
+}
+
+
+.metal-transicao{
+	color:var(--metal-transicao);
+}
+.metal-transicao-btn{
+	color: white;
+	background-color: var(--metal-transicao);
+}	
+
+
+.lantanideo{
+	color:var(--lantanideo);
+}
+.lantanideo-btn{
+	color: white;
+	background-color: var(--lantanideo);
+}
+	
+.actinidio{
+	color:var(--actinidio);
+}
+.actinidio-btn{
+	color: white;
+	background-color: var(--actinidio);
+}
